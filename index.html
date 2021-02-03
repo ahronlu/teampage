@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Devchallenges</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 60vw;
+      }
+
+      .d-flex {
+        display: flex;
+      }
+
+      .column {
+        flex-direction: column;
+      }
+
+      .space-between {
+        justify-content: space-between;
+      }
+
+      .img-span-wrapper {
+        display: flex;
+      }
+
+      .img-span-wrapper  span {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        text-transform: uppercase;
+      }
+
+      .img-wrapper img {
+        width: 100%;
+      }
+
+      .top {
+        margin-top: 2vw;
+      }
+
+      .top div {
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 2.6vw;
+      }
+
+      h3 {
+        font-size: 1.5vw;
+      }
+
+      p {
+        font-size: 1vw;
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .person {
+        width: 27%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .img-wrapper {
+        width: 12vw;
+      }
+
+      span {
+        font-size: 1vw;
+      }
+
+      .person .name {
+        font-weight: bold;
+      }
+      .person {
+        margin-top: 2vw;
+      }
+
+      .p2.person, .p5.person {
+        margin-top: 5vw;
+      }
+
+      .credit {
+        margin-top: 5vw;
+        text-align: center;
+        color: gray;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .container {
+          width: 90vw;
+        }
+
+        .header-wrapper {
+          margin-bottom: 5vw;
+        }
+
+        h1 {
+          font-size: 6vw;
+        }
+
+        .who-we-are h3 {
+          font-size: 4vw;
+          margin-bottom: 2vw;
+        }
+
+        .who-we-are p {
+          font-size: 3vw;
+        }
+
+        .p2.person {
+          margin-top: 15vw;
+        }
+
+        .top {
+          flex-direction: column;
+        }
+
+        .gallery {
+          margin-top: 10vw;
+        }
+
+        .person {
+          margin-top: 20vw 0!important;
+          width: 45%;
+        }
+
+        .person.p2, .person.p4, .person.p6 {
+          margin-top: 15vw;
+        }
+
+        .img-wrapper {
+          width: 45vw;
+        }
+
+        .img-span-wrapper span {
+          font-size: 2.5vw;
+        }
+
+        .name {
+          font-size: 2.5vw;
+        }
+
+        .top div {
+          width: 100%;
+        }
+
+        .credit {
+          margin-top: 10vw;
+        }
+      }
+
+      
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container d-flex column">
+      <div class="top d-flex space-between">
+        <div class="header-wrapper">
+          <h1>The creative crew</h1>
+        </div>
+        <div class="who-we-are">
+          <h3>WHO WE ARE</h3>
+          <p>We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.</p>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="person p1">
+          <div class="img-span-wrapper">
+            <div class="img-wrapper">
+              <img src="photo1.png"/>
+            </div>
+            <span>Product owner</span>
+          </div>
+          <span class="name">Bill Mahoney</span>
+        </div>
+        <div class="person p2">
+          <div class="img-span-wrapper">
+            <div class="img-wrapper">
+              <img src="photo2.png"/>
+            </div>
+            <span>Art director</span>
+          </div>
+          <span class="name">Saba Cabrera</span>
+        </div>
+        <div class="person p3">
+          <div class="img-span-wrapper">
+            <div class="img-wrapper">
+              <img src="photo3.png"/>
+            </div>
+            <span>Tech Lead</span>
+          </div>
+          <span class="name">Shae Le</span>
+        </div>
+        <div class="person p4">
+          <div class="img-span-wrapper">
+            <div class="img-wrapper">
+              <img src="photo4.png"/>
+            </div>
+            <span>UX Designer</span>
+          </div>
+          <span class="name">Skylah Lu</span>
+        </div>
+        <div class="person p5">
+          <div class="img-span-wrapper">
+            <div class="img-wrapper">
+              <img src="photo5.png"/>
+            </div>
+            <span>Developer</span>
+          </div>
+          <span class="name">Griff Richards</span>
+        </div>
+        <div class="person p6">
+          <div class="img-span-wrapper">
+            <div class="img-wrapper">
+              <img src="photo6.png"/>
+            </div>
+            <span>Developer</span>
+          </div>
+          <span class="name">Stan John</span>
+        </div>
+      </div>
+      <p class="credit">ahronlu@DevChallenges.io</p>
+      
+    </div>
+  </body>
+</html>
